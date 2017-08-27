@@ -27,7 +27,8 @@ Facebook loging and search for friends
 Facebook login
   open browser  ${url}  ${BROWSER}
   input text  css=#email  kmohankrishna20@gmail.com
-  input password  xpath=//*[@id="pass"]  37809709q1
+  ${pwd}  get value from user  Pwd for user :
+  input password  xpath=//*[@id="pass"]  ${pwd}
   click button  Log In
   sleep  3s
 
